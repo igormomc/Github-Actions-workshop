@@ -50,5 +50,6 @@ jobs:
           folder: dist
     steps:
       - uses: ${{secrets.PASSWORD}}
-      echo:
+      env:
+        PASSWORD: ${{secrets.PASSWORD}}
       
